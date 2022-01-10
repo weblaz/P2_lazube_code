@@ -1,0 +1,346 @@
+
+
+
+body {
+    
+    margin: 0;
+    padding: 0px 50px;
+    font-size: 18px;
+    font-family: Raleway;
+}
+
+h1 {
+    font-size: 150%;
+    margin-bottom: 0px;
+}
+
+h2 {
+    font-size: 120%;
+    ;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1px;
+}
+
+header #logo {
+    padding: 25px 0px;
+}
+
+header #logo img {
+    width: 150px;
+}
+
+header nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+}
+
+header nav ul li {
+    padding: 50px 25px;
+    border-top: 4px solid transparent;
+    margin: 0px 20px 0px 20px;
+}
+
+header nav ul li:hover {
+    border-color: #0065FC;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+header nav ul li:hover a {
+    color: #0065FC ;
+}
+
+
+.subtitle {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.search-box {
+    display: inline-block;
+    border: 1px solid #F2F2F2; 
+    border-radius: 15px;
+    width: auto;
+}
+
+.search-box .fa-map-marker-alt {
+    display: inline-block;
+    padding: 14px;
+    height: 28px;
+    font-size: 25px;
+    background-color:#F2F2F2 ;
+    border-radius: 15px 0px 0px 15px;
+}
+
+.search-box input {
+    outline: none;
+    height: 52px;
+    margin-left: -5px;
+    border: none;
+    padding: 10px;
+}
+
+.search-box button {
+    color: white;
+    height: 52px;
+    border: none;
+    border-radius: 0px 15px 15px 0px;
+    padding: 15px;
+    cursor: pointer;
+    background-color: #0065FC;
+}
+
+.search-box button .fa-search {
+    display: none;
+}
+
+
+
+#les_filtres {
+    display: flex;
+    align-items: center;
+}
+
+#les_filtres .filtre-box {
+    margin: 0px 10px;
+    border-radius: 30px;
+    border: 2px solid #F2F2F2;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 1s;
+}
+
+#les_filtres .filtre-box i {
+    background-color:#DEEBFF;
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    border-radius: 100%;
+    color:#0065FC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#les_filtres .filtre-box:hover {
+    transition: background-color 1s;
+    background-color:#DEEBFF;
+}
+
+#les_filtres .filtre-box .text {
+    padding: 0px 10px;
+}
+
+
+.les_villes {
+    display: flex;
+}
+
+.les_villes .fas.fa-info {
+    color: #0065FC;
+    border: 1px solid #F2F2F2;
+    border-radius: 100%;
+    width: 25px;
+    height: 25px;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+
+#les_hebergements {
+    display: flex;
+    justify-content: space-between;
+}
+
+#les_hebergements section h2 {
+    margin-top: 0px;
+}
+
+#les_hebergements section .container {
+    background-color: #F2F2F2;
+    padding: 20px 20px 10px 20px;
+    border-radius: 20px;
+    height: calc(100% - 120px);
+    box-sizing: content-box;
+}
+
+.hebergement-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.hebergement-list a {
+    width: 30%;
+    margin-bottom: 50px;
+}
+
+.hebergement-list a article {
+    background-color: white;
+    padding: 6px;
+    border-radius: 25px;
+    height: 100%;
+}
+
+.hebergement-list a article:hover {
+    box-shadow: 5px 5px 5px 0px #E2E2E2;
+}
+
+.hebergement-list a article .fa-star.blue {
+    color:#0065FC;
+}
+
+.hebergement-list a article .fa-star.grey {
+    color:#F2F2F2;
+}
+
+.hebergement-list a article img {
+    width: 100%;
+    height: 200px;
+    border-radius: 25px 25px 0px 0px;
+    object-fit: cover;
+}
+
+.hebergement-list a {
+    color: black;
+    text-decoration: none;
+}
+
+.hebergement-list a article .article-content {
+    padding: 10px 10px 0px 10px;
+}
+
+.hebergement-list a article .article-content h3,
+.hebergement-list a article .article-content p {
+    margin: 6px;
+}
+
+.hebergement-list a article .article-content .price.bold {
+    font-weight: bold;
+}
+
+#les_hebergements .marseille {
+    width: 60%;
+}
+
+#les_hebergements .marseille .subtitle {
+    font-weight: bold;
+    font-size: 120%;
+}
+
+
+#les_hebergements .populaire .chart-icone {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+#les_hebergements .populaire {
+    width: 35%;
+    position: relative;
+}
+
+#les_hebergements .populaire .hebergement-list {
+    flex-direction: column;
+}
+
+#les_hebergements .populaire .hebergement-list a {
+    width: 100%;
+}
+
+#les_hebergements .populaire .hebergement-list a article {
+    display: flex;
+    flex-direction: row;
+}
+
+#les_hebergements .populaire .hebergement-list a article img {
+    border-radius: 25px 0px 0px 25px;
+    width: 35%;
+}
+
+#les_hebergements .populaire .hebergement-list a article .article-content {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+
+
+#les_activites {
+    margin-bottom: 60px;
+    ;
+}
+
+.activite-list {
+    display: flex;
+    justify-content: space-between;
+    height: 600px;
+}
+
+.activite-list .column {
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 25px;
+}
+
+.activite-list .column article img {
+    width: 100%;
+    height: calc(100% - 67px);
+    object-fit: cover;
+    border-radius: 25px 25px 0px 0px;
+}
+
+.activite-list .column article {
+    height: 100%;
+    box-shadow: 0px 0px 10px 0px #E0E0E0;
+    border-radius: 25px;
+}
+
+.activite-list .column article h3 {
+    padding: 21px;
+    margin: 0px;
+}
+
+.activite-list .column.double article {
+    height: 48%;
+}
+
+
+
+footer {
+    background-color: #F2F2F2;
+    margin: 0px -50px;
+    padding: 50px;
+    display: flex;
+}
+
+footer .column {
+    width: 30%;
+}
+
+footer .column ul {
+    padding: 0px;
+    list-style-type: none;
+}
+
+footer .column ul li a {
+    color: black;
+    text-decoration: none;
+    line-height: 35px;
+}
