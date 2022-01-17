@@ -174,7 +174,7 @@ header nav ul li:hover a {
     background-color: #F2F2F2;
     padding: 20px 20px 10px 20px;
     border-radius: 20px;
-    height: calc(100% - 120px);
+    height: calc(100% - 40px);
     box-sizing: content-box;
 }
 
@@ -304,21 +304,26 @@ header nav ul li:hover a {
     height: calc(100% - 67px);
     object-fit: cover;
     border-radius: 25px 25px 0px 0px;
+    
 }
 
 .activite-list .column article {
     height: 100%;
     box-shadow: 0px 0px 10px 0px #E0E0E0;
     border-radius: 25px;
+    text-decoration: none;
+    
 }
 
-.activite-list .column article h3 {
+.activite-list .column  article h3 {
     padding: 21px;
     margin: 0px;
+    
 }
 
 .activite-list .column.double article {
     height: 48%;
+
 }
 
 
