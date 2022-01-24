@@ -21,7 +21,8 @@ header nav ul li {
     text-align: center;
     margin: 0px;
     border-top: none;
-    border-bottom: 2px solid var(--grey);
+    border-bottom: 2px solid ;
+    color: grey;
 }
 
 .search-box button {
@@ -36,28 +37,28 @@ header nav ul li {
     display: block;
 }
 
-#filter {
+#les_filtres {
     flex-direction: column;
     align-items: flex-start;
 }
 
-#hebergement .marseille {
+#les_hebergements .marseille {
     order: 2;
 }
 
-#hebergement .populaire {
+#les_hebergements .populaire {
     order: 1;
 }
 
-#hebergement .marseille .hebergement-list {
+#les_hebergements .marseille .hebergement-list {
     flex-direction: column;
 }
 
-#hebergement .marseille .hebergement-list a {
+#les_hebergements .marseille .hebergement-list a {
     width: 100%;
 }
 
-#activite .activite-list .column {
+#les_activites .activite-list .column {
     width: 100%;
 }
 
