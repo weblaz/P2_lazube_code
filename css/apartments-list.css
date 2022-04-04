@@ -1,0 +1,124 @@
+/*APARTMENTS LISTS*/
+
+.apartments-list {
+  gap: 30px;
+  display: flex;
+}
+
+.city {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 65%;
+  border: 1px solid var(--gray);
+  background-color: var(--gray);
+  border-radius: 20px;
+  padding: 12px;
+}
+
+.city h2 {
+  padding-left: 23px;
+}
+
+.city-apartments-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.apartments-list .city a {
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+
+.plus {
+  padding: 10px 0 10px 30px;
+}
+
+/*STARS*/
+
+.blue {
+  color: var(--blue);
+}
+
+.gray {
+  color: var(--gray);
+}
+
+/*POPULAR*/
+
+.city-apartments-list .popular-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.popular {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 32%;
+  border: 1px solid var(--gray);
+  background-color: var(--gray);
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.popular-list {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 20px;
+}
+
+.popular h2 {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0 10px 30px;
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 992px) {
+  .apartments-list {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .popular {
+    order: -1;
+    border-radius: 0;
+  }
+
+  .city {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: none;
+    background-color: white;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .apartments-list h2 {
+    padding: 0 10px;
+  }
+
+  .city-apartments-list {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+
+  .city {
+    gap: 5px;
+  }
+
+  .plus {
+    padding: 10px;
+  }
+
+  .popular-list {
+    margin-top: 10px;
+    padding: 5px;
+  }
+}

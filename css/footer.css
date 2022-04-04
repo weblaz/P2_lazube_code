@@ -1,0 +1,48 @@
+/*FOOTER*/
+
+footer {
+  display: flex;
+  margin-top: 50px;
+  padding: 3%;
+  background-color: var(--gray);
+}
+
+footer ul li {
+  margin: 3% 0%;
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+footer li {
+  font-weight: 500;
+}
+
+.section_footer {
+  margin-right: 2%;
+  flex: 1;
+}
+
+footer a {
+  text-decoration: none;
+  color: black;
+}
+
+footer h3 {
+  font-weight: 800;
+  margin-bottom: 7%;
+}
+
+@media (max-width: 768px) {
+  footer {
+    flex-direction: column;
+    padding-left: 5%;
+  }
+
+  footer h3 {
+    margin-top: 6%;
+    margin-bottom: 0;
+  }
+}

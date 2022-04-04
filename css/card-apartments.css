@@ -1,0 +1,53 @@
+/* card-apartments*/
+
+.card-apartments-link {
+  flex-basis: 31%;
+  background-color: white;
+  border-radius: 20px;
+  margin-bottom: 2%;
+  box-shadow: 2px 3px 3px rgb(153, 150, 150);
+  align-items: center;
+  padding: 5px 5px 10px 5px;
+}
+
+.card-apartments {
+  display: flex;
+  flex-direction: column;
+  max-height: 300px;
+}
+
+.card-apartments img {
+  height: 110px;
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+  object-fit: cover;
+}
+
+.card-apartments:hover {
+  color: var(--blue);
+  transition: all ease-out;
+  transform: scale(1.02);
+}
+
+.card-apartments-body {
+  display: flex;
+  padding-left: 10px;
+  flex-direction: column;
+  max-height: 200px;
+  margin: 0;
+}
+
+.card-apartments-body h3 {
+  margin: 5px 0 0 0;
+}
+
+@media screen and (max-width: 768px) {
+  .card-apartments img {
+    height: 130px;
+    width: 100%;
+  }
+
+  .card-apartments p {
+    margin: 12px 0;
+  }
+}
