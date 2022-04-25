@@ -16,3 +16,16 @@
   align-items: center;
   justify-content: center;
 }
+
+@media screen and (max-width: 600px){
+  .results-message .fas {
+    border: 1px solid lightgrey;
+    color: var(--blue);
+    border-radius: 50%;
+    width: 11%;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

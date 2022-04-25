@@ -45,7 +45,7 @@ nav a:hover {
 }
 
 .header-nav-link[data-active=true] {
-  border-top: 3px solid #0065FC;
+  border-top: 0px solid #0065FC;
 }
 .header-nav-link:hover {
   border-top: 3px solid #0065FC;
@@ -82,5 +82,16 @@ nav a:hover {
   .sub-nav a:hover {
     border-bottom-color: #0065fc;
     border-top-color: transparent;
+  }
+
+}
+
+
+@media screen and (max-width: 600px){
+  .header-nav-link[data-active=true] {
+      border-bottom-color: #0065FC;
+  }
+  .header-nav-link[data-active=true] {
+      color: #0065FC;
   }
 }

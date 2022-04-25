@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@import url("./body.css");
+@import url("./navbar.css");
+@import url("./search-form.css");
+@import url("./filters.css");
+@import url("./results-message.css");
+@import url("./apartments-list.css");
+@import url("./card-apartments.css");
+@import url("./card-popular.css");
+@import url("./activities.css");
+@import url("./footer.css");
+
+/*propriété box-sixing */
+* {
+  box-sizing: border-box; /* Opera/IE 8+ */
+  -moz-box-sizing: border-box; /* Firefox, autres Gecko */
+}
+
+:root {
+  --blue: #0065fc;
+  --lightblue: #deebff;
+  --gray: #f2f2f2;
+}
